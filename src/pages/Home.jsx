@@ -1,32 +1,22 @@
-import { useEffect, useState } from "react"
-import charactersData from "../data/data.js"
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
+function Home() {
+  const { t, i18n } = useTranslation()
 
-function Home(){
-    const[characters, setCharacters] = useState(charactersData)
-    const { t, i18n } = useTranslation();
+  return (
+    <main>
+      <button onClick={() => i18n.changeLanguage('pt')}>Português</button>
+      <button onClick={() => i18n.changeLanguage('en')}>English</button>
 
-    return(
-        <>
-            <div>
-                <h1>{t('Personagens - Vilões')}</h1>
-                {characters.map(character => {
-                    return(<li key={character.id}> 
-                            <img src={character.image} alt={character.name} style={{
-                                    width: '620px',
-                                    height: '380px',
-                                    objectFit: 'cover',
-                                    borderRadius: '8px'
-                                }} />
-                                <h1>{character.name}</h1>
-                                <h2>{character.franchise}</h2>
-                                <h3>{character.description}</h3>
-                            </li>)
-                })}
-            </div>
-        </>
-    )
+      <h1>{t('title')}</h1>
+
+      <h2>{t('characters.blackheart.name')}</h2>
+      <p>{t('characters.blackheart.description')}</p>
+
+      <h2>{t('characters.mrFreeze.name')}</h2>
+      <p>{t('characters.mrFreeze.description')}</p>
+    </main>
+  )
 }
 
 export default Home
