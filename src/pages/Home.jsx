@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react"
 import charactersData from "../data/data.js"
+import { useTranslation } from 'react-i18next';
+
 
 function Home(){
     const[characters, setCharacters] = useState(charactersData)
+    const { t, i18n } = useTranslation();
 
     return(
         <>
             <div>
+                <h1>{t('Personagens - Vilões')}</h1>
                 {characters.map(character => {
                     return(<li key={character.id}> 
                             <img src={character.image} alt={character.name} style={{
