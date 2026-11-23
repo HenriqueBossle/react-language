@@ -19,6 +19,11 @@ const characterTranslations = {
       description:
         "O Máscara Negra é um supervilão da DC Comics e um dos principais chefões do crime de Gotham City, rival frequente do Batman. Sua identidade mais conhecida é Roman Sionis,",
     },
+    mojo: {
+      name: 'Mojo',
+      description:
+        'Mojo é um supervilão alienígena e interdimensional da Marvel Comics, conhecido como o tirano do Mojoverso e um dos adversários mais excêntricos dos X-Men'
+    },
   },
   en: {
     blackheart: {
@@ -35,6 +40,11 @@ const characterTranslations = {
       name: 'Black Mask',
       description:
         'Black Mask is a DC Comics supervillain and one of the main crime bosses of Gotham City, a frequent rival of Batman. His best-known identity is Roman Sionis.'
+    },
+    mojo: {
+      name: 'Mojo',
+      description:
+        'Mojo is an alien, interdimensional supervillain from Marvel Comics, known as the tyrant of the Mojoverse and one of the X-Mens most eccentric adversaries.'
     },
 
   },
