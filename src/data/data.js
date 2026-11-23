@@ -23,4 +23,10 @@ export const characters = [
     franchise: 'Marvel',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPWLS2bHTpjmlTSCBw--tvCZCsrURAsfhB9RbQzRvs4schpF0J8mXoCk&s=10',
   },
+  { 
+    id: 5,
+    translationKey: 'reiDoCrime',
+    franchise: 'Marvel',
+    image: 'https://recreio.com.br/wp-content/uploads/2025/03/rei-do-crime-hq-capa.jpg',
+  },
 ]

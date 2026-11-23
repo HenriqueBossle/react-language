@@ -24,6 +24,10 @@ const characterTranslations = {
       description:
         'Mojo é um supervilão alienígena e interdimensional da Marvel Comics, conhecido como o tirano do Mojoverso e um dos adversários mais excêntricos dos X-Men'
     },
+    reiDoCrime: {
+      name: 'Rei do Crime',
+      description: 'Retratado como um dos mais temidos e influentes chefes do crime do Universo Marvel, geralmente associado ao submundo de Nova Iorque.'
+    }
   },
   en: {
     blackheart: {
@@ -45,6 +49,11 @@ const characterTranslations = {
       name: 'Mojo',
       description:
         'Mojo is an alien, interdimensional supervillain from Marvel Comics, known as the tyrant of the Mojoverse and one of the X-Mens most eccentric adversaries.'
+    },
+    reiDoCrime: {
+      name: 'Kingpin',
+      description:
+        'Portrayed as one of the most feared and influential crime bosses in the Marvel Universe, typically associated with the New York City underworld.'
     },
 
   },
