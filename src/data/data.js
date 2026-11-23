@@ -17,4 +17,10 @@ export const characters = [
     franchise: 'DC Comics',
     image: 'https://static0.srcdn.com/wordpress/wp-content/uploads/2016/12/Batman-villain-Black-Mask-from-DC-Comics.jpg?w=1200&h=675&fit=crop',
   },
+  { 
+    id: 4,
+    translationKey: 'mojo',
+    franchise: 'Marvel',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPWLS2bHTpjmlTSCBw--tvCZCsrURAsfhB9RbQzRvs4schpF0J8mXoCk&s=10',
+  },
 ]
