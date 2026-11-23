@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { characters } from '../data/data'
 
 function Home() {
   const { t, i18n } = useTranslation()
@@ -10,11 +11,14 @@ function Home() {
 
       <h1>{t('title')}</h1>
 
-      <h2>{t('characters.blackheart.name')}</h2>
-      <p>{t('characters.blackheart.description')}</p>
-
-      <h2>{t('characters.mrFreeze.name')}</h2>
-      <p>{t('characters.mrFreeze.description')}</p>
+      {characters.map((character) => (
+        <article key={character.id}>
+          <h2>{t(`characters.${character.translationKey}.name`)}</h2>
+          <p>{t(`characters.${character.translationKey}.description`)}</p>
+          <p>{character.franchise}</p>
+          <img src={character.image} alt={t(`characters.${character.translationKey}.name`)} />
+        </article>
+      ))}
     </main>
   )
 }
